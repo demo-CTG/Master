@@ -7,12 +7,11 @@ public class PlayerRespawn : MonoBehaviour {
 	[SerializeField]
 	GameObject player;
 	[SerializeField]
-	private string newLevel;
+	private string startMenu;
 
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "KillBox") {
-			transform.position = checkPoint.transform.position;
-			//SceneManager.LoadScene (newLevel);
+			SceneManager.LoadScene (startMenu);
 		}			
 	}
 }

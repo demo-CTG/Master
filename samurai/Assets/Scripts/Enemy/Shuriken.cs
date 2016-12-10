@@ -2,26 +2,25 @@
 using System.Collections;
 
 public class Shuriken : MonoBehaviour {
-	Rigidbody2D rb;
+	
 	[SerializeField]
-	float shurikenThrust, timeBetweenAttacks;
+	float shurikenThrust;
 
-	[SerializeField]
-	GameObject yakuza;
 	// Use this for initialization
 	void Start () {
-		//canThrow = GameObject.FindGameObjectWithTag("Enemy").GetComponent<YakuzaScript>();
-		rb = GetComponent<Rigidbody2D> ();
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	//	if (canThrow.shooting) {
-	//		rb.velocity = new Vector2 (shurikenThrust, rb.velocity.y);
-	//	}
+		transform.Translate (-transform.right * shurikenThrust);
 	}
-	IEnumerator SwitchShootingFalse(){
-		yield return new WaitForSeconds (timeBetweenAttacks);
-	//	canThrow.shooting = false;
+	IEnumerator Despawn(){
+		yield return null;
+	}
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == "Player") {
+			this.gameObject.SetActive (false);
+		}
 	}
 }

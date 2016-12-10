@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour {
 	//loco variables
 	[SerializeField]
-    float playerSpeed;//this float effects the players speed
+    public float playerSpeed;//this float effects the players speed
 	[SerializeField]
 	float jumpForce,dblJumpForce, wallJumpForce, pushOffWallForce,gravityAfterLimit;//this is how the player jumps and will need to be multiplied x2 in the inspector when a double jump is used
 	[SerializeField]

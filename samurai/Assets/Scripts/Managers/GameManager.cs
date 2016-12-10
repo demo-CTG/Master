@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 	[SerializeField]
@@ -9,6 +10,11 @@ public class GameManager : MonoBehaviour {
 	private float roundTimeLimit;
 	[SerializeField]
 	GameObject quitButton;
+	[SerializeField]
+	Text timerCounter;
+	[SerializeField]
+	string newLevel;
+
 	private float timer;
 
 	// Use this for initialization
@@ -19,8 +25,9 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timer += Time.deltaTime;
+		UpdateTimerText ();
 		if (timer >= roundTimeLimit) {
-			StartTheFall ();
+			StartOver ();
 		}
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			PauseMenu ();
@@ -31,5 +38,11 @@ public class GameManager : MonoBehaviour {
 	}
 	void PauseMenu(){
 		quitButton.SetActive (true);
+	}
+	void UpdateTimerText(){
+		timerCounter.text = "Time: " + timer.ToString ();
+	}
+	void StartOver(){
+		SceneManager.LoadScene (newLevel);
 	}
 }

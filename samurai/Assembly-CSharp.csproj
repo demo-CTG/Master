@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\Traps\LaserScript.cs" />
      <Compile Include="Assets\Scripts\Traps\SpikeShooter.cs" />
      <Compile Include="Assets\Scripts\Traps\spike.cs" />
+     <Compile Include="Assets\Scripts\yakuzaScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
