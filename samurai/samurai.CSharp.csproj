@@ -66,7 +66,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Background\CityDespawn.cs" />
+    <Compile Include="Assets\Scripts\Background\CityLayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Background\CloudDespawn.cs" />
+    <Compile Include="Assets\Scripts\Background\CloudLayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Background\MoonLayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Background\MountainDespawn.cs" />
+    <Compile Include="Assets\Scripts\Background\MountainLayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Background\StartMenu.cs" />
+    <Compile Include="Assets\Scripts\ButtonManager.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Shuriken.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\PlatformGen.cs" />
+    <Compile Include="Assets\Scripts\Managers\PlatformScript.cs" />
+    <Compile Include="Assets\Scripts\Pickupables\CoinScript.cs" />
+    <Compile Include="Assets\Scripts\Player\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerRespawn.cs" />
+    <Compile Include="Assets\Scripts\Player\Score.cs" />
+    <Compile Include="Assets\Scripts\Player\WallJump.cs" />
+    <Compile Include="Assets\Scripts\Player\playerFallScript.cs" />
+    <Compile Include="Assets\Scripts\Traps\FanScript.cs" />
+    <Compile Include="Assets\Scripts\Traps\LaserScript.cs" />
+    <Compile Include="Assets\Scripts\Traps\SpikeShooter.cs" />
+    <Compile Include="Assets\Scripts\Traps\spike.cs" />
+    <Compile Include="Assets\Scripts\yakuzaScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

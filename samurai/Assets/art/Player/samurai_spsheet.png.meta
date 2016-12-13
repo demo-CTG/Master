@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: bd884d1584fcf594d95f178058eff62b
+timeCreated: 1481558518
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: samurai_spsheet_0
+    21300002: samurai_spsheet_1
+    21300004: samurai_spsheet_2
+    21300006: samurai_spsheet_3
+    21300008: samurai_spsheet_4
+    21300010: samurai_spsheet_5
+    21300012: samurai_spsheet_6
+    21300014: samurai_spsheet_7
+    21300016: samurai_spsheet_9
+    21300018: samurai_spsheet_16
+    21300020: samurai_spsheet_18
+    21300022: samurai_spsheet_19
+    21300024: samurai_spsheet_20
+    21300026: samurai_spsheet_21
+    21300028: samurai_spsheet_22
+    21300030: samurai_spsheet_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: samurai_spsheet_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 369
+        width: 165
+        height: 176
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 368
+        width: 144
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_2
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 367
+        width: 139
+        height: 191
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 353
+        width: 119
+        height: 189
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_4
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 358
+        width: 126
+        height: 175
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_5
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 362
+        width: 154
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_6
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 363
+        width: 136
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_7
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 357
+        width: 132
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_9
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 368
+        width: 109
+        height: 180
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_16
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 49
+        width: 106
+        height: 180
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_18
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 39
+        width: 113
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_19
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 93
+        width: 123
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_20
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 95
+        width: 143
+        height: 145
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_21
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 85
+        width: 122
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_22
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 57
+        width: 127
+        height: 170
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: samurai_spsheet_23
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 38
+        width: 127
+        height: 163
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
