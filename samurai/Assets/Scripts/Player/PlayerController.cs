@@ -4,10 +4,10 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 	//loco variables
-	[SerializeField]
+	
     public float playerSpeed;//this float effects the players speed
 	[SerializeField]
-	float jumpForce,dblJumpForce, wallJumpForce, pushOffWallForce,gravityAfterLimit;//this is how the player jumps and will need to be multiplied x2 in the inspector when a double jump is used
+	float jumpForce,dblJumpForce, wallJumpForce, pushOffWallForce,gravityAfterLimit, timeUntilLerpBAck, lerpBackSpeed;//this is how the player jumps and will need to be multiplied x2 in the inspector when a double jump is used
 	[SerializeField]
 	int wallJumpCount = 0;
 	private int jumpCount, wallJumpMax = 2;
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
 	[SerializeField]
 	float attackDistance;
 	[SerializeField]
-	Transform attackPoint;
+	Transform attackPoint,lerpBack;
 	//collecting the coins variables
 	[SerializeField]
 	int coinCounter = 0;
@@ -32,7 +32,9 @@ public class PlayerController : MonoBehaviour {
 	WallJump wallJump;
 	private Collider2D myCollider;
 	private Rigidbody2D myRigidbody;
-
+    private bool lerpingBack = false;
+    private bool start = false;
+    private Transform startPos;
     void Start () {
 		coinCounter = 0;
 		UpdateGui ();
@@ -43,8 +45,7 @@ public class PlayerController : MonoBehaviour {
 	}
 	void Update () {
         PlayerMovement();
-		if (Input.GetKeyDown (KeyCode.Mouse0))
-			Jump ();
+		
 		if (Input.GetKeyDown (attackKey))
 			Attack ();
 		if(wallJumpCount > wallJumpMax && !grounded)
@@ -58,7 +59,9 @@ public class PlayerController : MonoBehaviour {
     }
 	void PlayerMovement(){
 		myRigidbody.velocity = new Vector2 (playerSpeed, myRigidbody.velocity.y);//This should be done as a method/ player speed is determined by the x and the velocity for the y is seperated
-	}
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+            Jump();
+    }
 	void Jump(){
 		if (grounded) {
 			myRigidbody.velocity = new Vector2 (myRigidbody.velocity.x, jumpForce);
