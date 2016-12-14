@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: f95d2052ae84aec43a6e6cb87fd7bab9
+timeCreated: 1481650006
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fin_runANIM_0
+    21300002: fin_runANIM_1
+    21300004: fin_runANIM_2
+    21300006: fin_runANIM_3
+    21300008: fin_runANIM_4
+    21300010: fin_runANIM_5
+    21300012: fin_runANIM_7
+    21300014: fin_runANIM_8
+    21300016: fin_runANIM_9
+    21300018: fin_runANIM_10
+    21300020: fin_runANIM_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fin_runANIM_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 314
+        width: 144
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fin_runANIM_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 307
+        width: 145
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fin_runANIM_2
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 320
+        width: 127
+        height: 176
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fin_runANIM_3
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 296
+        width: 144
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fin_runANIM_4
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 289
+        width: 107
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fin_runANIM_5
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 291
+        width: 113
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fin_runANIM_7
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 79
+        width: 135
+        height: 169
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fin_runANIM_8
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 78
+        width: 134
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fin_runANIM_9
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 78
+        width: 137
+        height: 170
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fin_runANIM_10
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 76
+        width: 145
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fin_runANIM_11
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 73
+        width: 107
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
