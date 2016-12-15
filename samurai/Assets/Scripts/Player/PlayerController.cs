@@ -35,7 +35,9 @@ public class PlayerController : MonoBehaviour {
     private bool lerpingBack = false;
     private bool start = false;
     private Transform startPos;
+    Animator anim;
     void Start () {
+        anim = GetComponent<Animator>();
 		coinCounter = 0;
 		UpdateGui ();
 		wallJump = GetComponentInChildren<WallJump> ();
@@ -67,9 +69,11 @@ public class PlayerController : MonoBehaviour {
 			myRigidbody.velocity = new Vector2 (myRigidbody.velocity.x, jumpForce);
 			jumpCount++;
 			grounded = false;
+            anim.SetBool("isJumping",true);
 		}else if (!grounded && jumpCount < 2) {
 			myRigidbody.velocity = new Vector2 (myRigidbody.velocity.x, jumpForce);
 			jumpCount++;
+            anim.SetBool("isJumping", false);
 		}			
 	}
 	void Attack(){
@@ -78,6 +82,7 @@ public class PlayerController : MonoBehaviour {
 			if (hit.collider.tag == "Enemy") {
 				print ("hit target");
 				Debug.DrawRay (transform.position, hit.point,Color.red, 3f);
+                anim.SetBool("isAttacking", true);
 			}
 		}
 	}

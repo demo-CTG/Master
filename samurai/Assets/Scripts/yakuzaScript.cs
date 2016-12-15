@@ -9,6 +9,7 @@ public class yakuzaScript : MonoBehaviour {
 	}
 	public State state;
 	private bool alive;
+    
 	//chase variables
 
 	//attack varaibles
