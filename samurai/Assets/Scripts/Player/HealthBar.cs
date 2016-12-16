@@ -41,7 +41,9 @@ public class HealthBar : MonoBehaviour {
 		if (other.tag == "Fan") {
 			FanDamage ();
 			rb.velocity = new Vector2(rb.velocity.x * fanHitForce,fanHitForce);
-		}			
+		}
+        if (other.tag == "Shuriken")
+            ShurikenDamage();			
 	}
 	void LaserDamage(){
 		float laserDamage;
@@ -68,4 +70,13 @@ public class HealthBar : MonoBehaviour {
 		newHealth = currentHealth / maxHeatlh;
 		SetHealthBar (newHealth);
 	}
+    void ShurikenDamage()
+    {
+        float damage;
+        float newHealth;
+        damage = 15f;
+        currentHealth = currentHealth - damage;
+        newHealth = currentHealth / maxHeatlh;
+        SetHealthBar(newHealth);
+    }
 }

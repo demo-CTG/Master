@@ -65,9 +65,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraFall.cs" />
-    <Compile Include="Assets\FallPlatformGen.cs" />
-    <Compile Include="Assets\PlayerFallScript.cs" />
+    <Compile Include="Assets\EnemyDie.cs" />
     <Compile Include="Assets\Scripts\Background\CityDespawn.cs" />
     <Compile Include="Assets\Scripts\Background\CityLayerMovement.cs" />
     <Compile Include="Assets\Scripts\Background\CloudDespawn.cs" />
@@ -78,7 +76,9 @@
     <Compile Include="Assets\Scripts\Background\StartMenu.cs" />
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\CameraFall.cs" />
     <Compile Include="Assets\Scripts\Enemy\Shuriken.cs" />
+    <Compile Include="Assets\Scripts\FallPlatformGen.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\PlatformGen.cs" />
     <Compile Include="Assets\Scripts\Managers\PlatformScript.cs" />
@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerRespawn.cs" />
     <Compile Include="Assets\Scripts\Player\Score.cs" />
     <Compile Include="Assets\Scripts\Player\WallJump.cs" />
+    <Compile Include="Assets\Scripts\PlayerFallScript.cs" />
     <Compile Include="Assets\Scripts\Traps\FanScript.cs" />
     <Compile Include="Assets\Scripts\Traps\LaserScript.cs" />
     <Compile Include="Assets\Scripts\Traps\SpikeShooter.cs" />
