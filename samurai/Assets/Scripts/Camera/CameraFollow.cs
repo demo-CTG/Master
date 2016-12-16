@@ -18,6 +18,7 @@ public class CameraFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		transform.Translate (transform.right  * Time.deltaTime * cameraSpeed);
+		//transform.Translate (transform.right  * Time.deltaTime * cameraSpeed);
+		transform.position = new Vector3(target.transform.position.x + cameraOffset.x, cameraOffset.y, cameraOffset.z);
 	}
 }

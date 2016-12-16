@@ -18,12 +18,10 @@ public class yakuzaScript : MonoBehaviour {
 	[SerializeField]
 	GameObject player;
 	[SerializeField]
-	GameObject[] shurikens;
+	GameObject shuriken;
 	[SerializeField]
-	float timeBetweenAttacks, maxShurikens;
+	float timeBetweenAttacks;
 
-	private float currentShuriken;
-	private int shurikenCounter = 0;
 	// Use this for initialization
 	void Start () {
 		state = yakuzaScript.State.PATROL;
@@ -47,25 +45,13 @@ public class yakuzaScript : MonoBehaviour {
 		print ("patrolling");
 	}
 	IEnumerator Attack(){
-		print ("Attack");
-		shurikens [shurikenCounter].SetActive (true);
-		shurikens [shurikenCounter].transform.position = gunBarrel.transform.position;
+		Instantiate (shuriken, gunBarrel.position, transform.rotation);
+		state = yakuzaScript.State.PATROL;
 		yield return new WaitForSeconds (timeBetweenAttacks);
-		shurikenCounter++;
-
-
-	//	if (currentShuriken <= maxShurikens) {
-	//		shurikenCounter++;
-	//	} else if (currentShuriken > maxShurikens) {
-	//		state = yakuzaScript.State.PATROL;
-	//	}
-
-
+		state = yakuzaScript.State.ATTACK;
 	}
 	// Update is called once per frame
-	void Update () {
-	
-	}
+
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Player") {
 			state = yakuzaScript.State.ATTACK;

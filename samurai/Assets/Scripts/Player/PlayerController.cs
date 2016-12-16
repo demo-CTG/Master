@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
 	
     public float playerSpeed;//this float effects the players speed
 	[SerializeField]
-	float jumpForce,dblJumpForce, wallJumpForce, pushOffWallForce,gravityAfterLimit, timeUntilLerpBAck, lerpBackSpeed;//this is how the player jumps and will need to be multiplied x2 in the inspector when a double jump is used
+	float jumpForce,dblJumpForce, wallJumpForce, pushOffWallForce,gravityAfterLimit, timeUntilLerpBAck, lerpBackSpeed, attackTime;//this is how the player jumps and will need to be multiplied x2 in the inspector when a double jump is used
 	[SerializeField]
 	int wallJumpCount = 0;
 	private int jumpCount, wallJumpMax = 2;
@@ -23,11 +23,14 @@ public class PlayerController : MonoBehaviour {
 	float attackDistance;
 	[SerializeField]
 	Transform attackPoint,lerpBack;
+	[SerializeField]
+	GameObject attack;
 	//collecting the coins variables
 	[SerializeField]
 	int coinCounter = 0;
 	[SerializeField]
 	Text coinsText;
+
 
 	WallJump wallJump;
 	private Collider2D myCollider;
@@ -49,7 +52,7 @@ public class PlayerController : MonoBehaviour {
         PlayerMovement();
 		
 		if (Input.GetKeyDown (attackKey))
-			Attack ();
+			StartCoroutine (Attack());
 		if(wallJumpCount > wallJumpMax && !grounded)
 			myRigidbody.velocity = new Vector2 (0, gravityAfterLimit * wallJumpForce);
 
@@ -76,15 +79,10 @@ public class PlayerController : MonoBehaviour {
             anim.SetBool("isJumping", false);
 		}			
 	}
-	void Attack(){
-		RaycastHit hit;
-		if(Physics.Raycast (attackPoint.position, transform.right, out hit, attackDistance)){
-			if (hit.collider.tag == "Enemy") {
-				print ("hit target");
-				Debug.DrawRay (transform.position, hit.point,Color.red, 3f);
-                anim.SetBool("isAttacking", true);
-			}
-		}
+	IEnumerator Attack(){
+		attack.SetActive (true);
+		yield return new WaitForSeconds (attackTime);
+		attack.SetActive (false);
 	}
 
 	void OnCollisionEnter2D(Collision2D col){//detects if the jump is actually active
